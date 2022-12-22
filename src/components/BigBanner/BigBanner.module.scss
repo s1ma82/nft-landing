@@ -1,0 +1,23 @@
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content{
+        display: flex;
+        height: max-content;
+        flex-direction: column;
+        justify-content: space-between;
+        .title{
+            font-weight: 700;
+            font-family: sans-serif;
+            font-size: 80px;
+        }
+        .description{
+            display: flex;
+            justify-content: flex-start;
+            gap: 40px;
+        }
+    }
+    
+}
