@@ -9,7 +9,7 @@ export default ({children, description}) => {
                     {children}
                 </span>
                 <dir className={styles.description}>
-                    <Btn href="#discoverNft" style="sircle">Discover NFT</Btn>
+                    <Btn href="#discoverNft" style="circle">Discover NFT</Btn>
                     <span className={styles.text}>
                         {description}
                     </span>
