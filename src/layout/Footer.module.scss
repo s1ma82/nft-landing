@@ -1,4 +1,50 @@
 .footer{
+    display: grid;
+    grid-template-areas:"info nav"
+                        "terms terms";
+    row-gap: 70px;
     margin-top: auto;
-    
-}
+    color: #fff;
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        grid-area: info;
+        .socials{
+            display: flex;
+            gap: 10px
+        }
+    };
+    .navGrid{
+        display: flex;
+        gap: 30px;
+        grid-area: nav;
+        .item{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            color: var(--color-gray);
+            :first-child{
+                margin-bottom: 20px;
+                color: #fff
+            }
+            
+        }
+    };
+    .terms{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        grid-area: terms;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 1.5px;
+            width: 98%;
+            background: #ffffff90;
+        }
+    }
+}   

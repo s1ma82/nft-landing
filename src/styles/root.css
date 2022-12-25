@@ -1,0 +1,7 @@
+@import './fonts/fonts.css';
+:root{
+    --color-gray: #888;
+    --color-primary-main: #110929;
+    /* // fonts */
+    /* // --font-inter: 'Inter'; */
+}
