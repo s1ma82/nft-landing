@@ -1,0 +1,17 @@
+.stats{
+    padding: 10px;
+    display: flex;
+    width: min-content;
+    gap: 20px;
+    &__block{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .value{
+            font-weight: 700;
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+    }
+}
