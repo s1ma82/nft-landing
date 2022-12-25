@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
 import styles from './CardsBanner.module.scss'
+import BannerImgMain from '../../assets/BannerImgMain.svg'
+import BannerImgBack from '../../assets/BannerImgBack.svg'
+import BannerImgFront from '../../assets/BannerImgFront.svg'
 
 export default () => {
     const [state, setState] = useState()
@@ -15,9 +18,9 @@ export default () => {
 
     return state ? (
         <div className={styles.cards}>
-            <img data-pos="1" className={styles.card} src={state[0].url} alt="picture"/>
-            <img data-pos="2" className={styles.card} src={state[1].url} alt="picture"/>
-            <img data-pos="3" className={styles.card} src={state[2].url} alt="picture"/>
+            <img data-pos="1" className={styles.card} src={BannerImgMain} alt="picture"/>
+            <img data-pos="2" className={styles.card} src={BannerImgBack} alt="picture"/>
+            <img data-pos="3" className={styles.card} src={BannerImgFront} alt="picture"/>
         </div>
     ) : null
 }

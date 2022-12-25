@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
+    margin-left: 100px;
 
     .content{
         display: flex;
@@ -12,11 +14,13 @@
             font-weight: 700;
             font-family: sans-serif;
             font-size: 80px;
+            color: #fff
         }
         .description{
             display: flex;
             justify-content: flex-start;
             gap: 40px;
+            color: #fff;
         }
     }
     

@@ -6,7 +6,7 @@ export default ( {children} ) => {
         <>
             <Router>
                 <Header />
-                <main>
+                <main className='main'>
                     <Routes>
                         {children}
                     </Routes>
