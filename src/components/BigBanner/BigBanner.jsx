@@ -1,4 +1,4 @@
-import {Btn, CardsBanner} from '../'
+import {Btn, CardsBanner, StatsBlock} from '../'
 import styles from './BigBanner.module.scss'
 
 export default ({children, description}) => {
@@ -14,6 +14,9 @@ export default ({children, description}) => {
                         {description}
                     </span>
                 </dir>
+                <div>
+                    <StatsBlock/>
+                </div>
             </div>
             <div className={styles.cards}>
                 <CardsBanner/>

@@ -26,7 +26,7 @@ export default ({ data }) => {
                     <span className={styles.available}>{available}</span>
                 </div>
                 <div className={styles.footer}>
-                    <Timer />
+                    
                     <Link href={`#${id}`}>Place a bid</Link>
                 </div>
             </div>
