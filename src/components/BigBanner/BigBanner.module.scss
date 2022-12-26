@@ -2,9 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
-    margin-left: 100px;
-
+    
 
     .content{
         display: flex;
@@ -12,10 +10,16 @@
         flex-direction: column;
         justify-content: space-between;
         .title{
-            font-weight: 700;
+            font-weight: 800;
             font-family: sans-serif;
-            font-size: 80px;
-            color: #fff
+            font-size: 75px;
+            color: #fff;
+            b{
+                font-weight: inherit;
+                color: transparent;
+                background: var(--color-gradient);
+                background-clip: text;
+            }
         }
         .description{
             display: flex;

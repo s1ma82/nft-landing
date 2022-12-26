@@ -10,7 +10,9 @@ import Card from './Card/Card'
 import Timer from './Timer/Timer'
 import InfoBlock from './InfoBlock/InfoBlock'
 import Social from './Social/Social'
+import Container from './Container/Container'
 export {
+    Container,
     Social,
     InfoBlock,
     Timer,

@@ -2,6 +2,10 @@
 :root{
     --color-gray: #888;
     --color-primary-main: #110929;
+    --color-primary-light: #251163;
+    --color-gradient: linear-gradient(112.62deg, #8D1CFE 29.4%, #0038ED 105.14%, #0038ED 105.15%);
     /* // fonts */
     /* // --font-inter: 'Inter'; */
+    --container-max-width: 1200px;
+    
 }

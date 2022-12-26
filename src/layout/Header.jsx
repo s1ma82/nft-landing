@@ -1,8 +1,9 @@
-import { Logo, Btn, Link } from "../components"
+import { Logo, Btn, Link, Container } from "../components"
 import styles from './Header.module.scss'
 export default () => {
     return (
-        <header className={styles.header}>
+        <header>
+            <Container className={styles.header}>
             <div className={styles.header__container}>
                 <Logo/>
             </div>
@@ -33,6 +34,7 @@ export default () => {
             <div className={styles.header__container}>
                 <Btn href="/contact">Contact Us</Btn>
             </div>
+            </Container>
         </header>
     )
 }

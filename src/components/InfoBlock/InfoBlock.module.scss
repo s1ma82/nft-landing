@@ -1,0 +1,26 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    background: var(--color-primary-light);
+    color: #fff;
+    height: 250px;
+    width: 380px;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 16px;
+
+    .img{
+        width: 40px;
+    }
+    &_person{
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
+        .img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
