@@ -1,5 +1,11 @@
 import styles from './StatsBlock.module.scss'
-export default ({ data }) => {
+export default () => {
+
+    const data = [
+        {name: 'Artwork', value: '25.1'},
+        {name: 'Artist', value: '15.6'},
+        {name: 'Aucition', value: '10.2'}
+    ]
     
     return (
         <div className={styles.stats}>

@@ -1,3 +1,4 @@
+import DropsApp from "../apps/DropsApp/DropsApp"
 import { BigBanner, Container, InfoBlock, StatsBlock, Title } from "../components"
 
 export default () => {
@@ -8,6 +9,7 @@ export default () => {
                     description='The Larges NFT Marketplace. Automatic and truly unique digital creation. Signed and issued by the creator, made possible by blockchain technologi'
                 >Create Your Own <b>NFT Dream</b> Gallery 
                 </BigBanner>
+                <DropsApp />
             </Container>
         </>
     )
