@@ -4,7 +4,13 @@
     padding: 16px 32px;
     text-decoration: none;
     cursor: pointer;
+    transition: .3s;
+
     &__text {
         color: #fff;
+    }
+    &:hover{
+        transform: scale(.95);
+        transition: .3s;
     }
 }

@@ -1,6 +1,6 @@
 import styles from './Title.module.scss'
-export default ({ children }) => {
+export default ({ children, className = '' }) => {
     return (
-        <h1 className={styles.title}>{children}</h1>
+        <h1 className={`${styles.title} ${className}`}>{children}</h1>
     )
 }
