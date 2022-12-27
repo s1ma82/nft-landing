@@ -1,5 +1,7 @@
 import styles from './Card.module.scss'
 import {Link, Timer} from '../'
+import cardImg from '../../assets/cardImage.svg'
+
 const Price = ({ currency, children }) => {
     switch (currency) {
         case 'eth':
@@ -16,20 +18,26 @@ const Price = ({ currency, children }) => {
 }
 export default ({ data }) => {
     const {title, price, currency, available, id} = data
+
     return (
         <div className={styles.card}>
-            <img className={styles.img} src="" alt="card picture" />
+            <img className={styles.img} src={cardImg} alt="card picture" />
             <div className={styles.content}>
-                <h1 className={styles.title}>{title}</h1>
+                <h1 className={styles.title}>ArtCrypto</h1>
                 <div className={styles.marketInfo}>
                     <Price currency={currency}>{price}</Price>
                     <span className={styles.available}>{available}</span>
-                </div>
-                <div className={styles.footer}>
-                    
-                    <Link href={`#${id}`}>Place a bid</Link>
+                    <hr/>
                 </div>
             </div>
+            <div className={styles.footer}>
+                    <div>
+                        Timer
+                    </div>
+                    <div className={styles.bid}>
+                        <Link href={`#${id}`}>Place a bid</Link>
+                    </div>
+                </div>
         </div>
     )
 }
